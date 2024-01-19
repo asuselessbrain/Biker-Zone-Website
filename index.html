@@ -4,27 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biker Zone</title>
+    <title>Document</title>
 
-    <!-- deaisy css -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
-    <header class="bg-[#264653]">
+    <header class="bg-[#264653] text-white">
         <nav>
             <div class="navbar">
                 <div class="navbar-start w-[70%]">
                     <div class="dropdown">
-                        <div role="button" class="btn btn-ghost lg:hidden">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M4 6h16M4 12h8m-8 6h16" />
                             </svg>
                         </div>
-                        <ul class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow rounded-box w-52">
+                        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                             <li><a>Home</a></li>
                             <li><a>Shop</a></li>
                             <li><a>News</a></li>
@@ -32,7 +31,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="navbar-center hidden lg:flex">
+                <div class="navbar-center hidden md:flex">
                     <ul class="menu menu-horizontal px-1">
                         <li><a>Home</a></li>
                         <li><a>Shop</a></li>
@@ -40,7 +39,7 @@
                         <li><a>Contact</a></li>
                     </ul>
                 </div>
-                <div class="navbar-end w-auto">
+                <div class="navbar-end w-[30%]">
                     <a class="btn">Button</a>
                 </div>
             </div>
@@ -48,16 +47,19 @@
 
         <!-- banner section -->
 
-        <div class="hero py-20">
-            <div class="hero-content flex-col-reverse lg:flex-row-reverse">
-              <img src="./images/others/honda-cbr-300r-2-removebg-preview 1.png" class="max-w-sm rounded-lg shadow-2xl" />
-              <div>
-                <h1 class="text-5xl font-bold">Box Office News!</h1>
-                <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                <button class="btn btn-primary">Get Started</button>
-              </div>
+        <div>
+            <div class="hero py-20">
+                <div class="hero-content flex-col md:flex-row-reverse">
+                    <img src="./images/others/honda-cbr-300r-2-removebg-preview 1.png">
+                    <div>
+                        <h1 class="text-5xl font-bold">Box Office News!</h1>
+                        <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
+                            exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                        <button class="btn btn-primary">Get Started</button>
+                    </div>
+                </div>
             </div>
-          </div>
+        </div>
     </header>
 </body>
 
